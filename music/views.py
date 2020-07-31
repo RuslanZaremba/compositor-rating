@@ -9,8 +9,8 @@ from .models import PlayList
 class PlayListView(TemplateView):
     template_name = 'index.html'
 
-    def prosmotr(self):
-        return HttpResponse(f'RuslanZaremba')
+    def view(self):
+        return HttpResponse(template_name)
 
     def get_context_data(self, **kwargs):
         context = super(PlayListView, self).get_context_data(**kwargs)

@@ -6,3 +6,6 @@ class PlayList(models.Model):
     track_list = models.TextField(verbose_name='Список композиций', null=True)
     image = models.ImageField(verbose_name='картинка', null=True)
     count_tracks = models.PositiveIntegerField(verbose_name='Колличество композиций', default=0)
+
+    def __str__(self):
+    	return self.name
